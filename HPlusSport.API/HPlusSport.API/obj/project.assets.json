@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aynur\\source\\repos\\HPlusSport.API\\HPlusSport.API\\HPlusSport.API.csproj",
+      "projectUniqueName": "C:\\Users\\aynur\\Source\\Repos\\Sample-API\\HPlusSport.API\\HPlusSport.API\\HPlusSport.API.csproj",
       "projectName": "HPlusSport.API",
-      "projectPath": "C:\\Users\\aynur\\source\\repos\\HPlusSport.API\\HPlusSport.API\\HPlusSport.API.csproj",
+      "projectPath": "C:\\Users\\aynur\\Source\\Repos\\Sample-API\\HPlusSport.API\\HPlusSport.API\\HPlusSport.API.csproj",
       "packagesPath": "C:\\Users\\aynur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aynur\\source\\repos\\HPlusSport.API\\HPlusSport.API\\obj\\",
+      "outputPath": "C:\\Users\\aynur\\Source\\Repos\\Sample-API\\HPlusSport.API\\HPlusSport.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\aynur\\AppData\\Roaming\\NuGet\\NuGet.Config",

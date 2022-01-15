@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GIwxjhpnHRhYvVGIzmzDwAFFhTXOIRBBfXAoXh8NKx1VP70cCWDLSRHnfZ2onNdPhf79z1TK8lHy+V+M+VmCtg==",
+  "dgSpecHash": "FCXXZZevIyqJBuAmqydFTx8dZbSO2trTH6KvSKLIYBzjeS4OAJHPGeNXUj9302GnaGtkn7EVOvkdyHKraCVAvA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aynur\\source\\repos\\HPlusSport.API\\HPlusSport.API\\HPlusSport.API.csproj",
+  "projectFilePath": "C:\\Users\\aynur\\Source\\Repos\\Sample-API\\HPlusSport.API\\HPlusSport.API\\HPlusSport.API.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
