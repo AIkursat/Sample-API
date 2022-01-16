@@ -22,5 +22,24 @@ namespace HPlusSport.API.Classes
             }
         }
 
+        public string SortBy { get; set; } = "Id";
+        private string _sortOrder = "asc";
+
+        public string SortOrder
+        {
+            get
+            {
+                return _sortOrder;
+            }
+            set
+            {
+                if (value == "desc")
+                {
+                    _sortOrder = value;
+                }
+            }
+        }
+
+
     }
 }

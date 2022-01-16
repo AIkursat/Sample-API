@@ -30,7 +30,7 @@ namespace HPlusSport.API.Controllers
         {
             IQueryable<Product> products = _context.Products;          
 
-            if(queryParameters.MinPrice != null && queryParameters.MaxPrice != null)
+            if(queryParameters.MinPrice != null && queryParameters.MaxPrice != null) // Filtering.
             {
                 products = products.Where(p => p.Price >= queryParameters.MinPrice.Value && p.Price <= queryParameters.MaxPrice.Value);
             }
@@ -39,7 +39,21 @@ namespace HPlusSport.API.Controllers
                 products = products.Where(p => p.Sku == queryParameters.Sku);
             }
 
-               products = products
+            if (!string.IsNullOrEmpty(queryParameters.Name)) // Searching.
+            {
+                products = products.Where(
+                    p => p.Name.ToLower().Contains(queryParameters.Name.ToLower()));
+            }
+
+            if (!string.IsNullOrEmpty(queryParameters.SortBy)) // Sorting.
+            {
+                if (typeof(Product).GetProperty(queryParameters.SortBy) != null)
+                {
+                    products = products.OrderByCustom(queryParameters.SortBy, queryParameters.SortOrder);
+                }
+            }
+
+            products = products // Paging.
               .Skip(queryParameters.Size * (queryParameters.Page - 1))
               .Take(queryParameters.Size);               
 
