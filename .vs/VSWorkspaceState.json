@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\HPlusSport.API",
+    "\\HPlusSport.API\\HPlusSport.API",
+    "\\HPlusSport.API\\HPlusSport.API\\Controllers"
   ],
-  "SelectedNode": "\\HPlusSport.API.sln",
+  "SelectedNode": "\\HPlusSport.API\\HPlusSport.API\\Controllers\\ProductsController.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -70,6 +70,83 @@ namespace HPlusSport.API.Controllers
             return Ok(products);
         }
 
+        [HttpPost]
+        public async Task<IActionResult> PostProduct([FromBody] Product product)
+        {
+            _context.Products.Add(product);
+             await _context.SaveChangesAsync();
+
+            return CreatedAtAction(
+                "GetProduct",
+                new { Id = product.Id },
+                product
+                );
+        }
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutProduct([FromRoute] int id, [FromBody] Product product)
+        {
+            if (id != product.Id)
+            {
+                return BadRequest();
+            }
+
+            _context.Entry(product).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (_context.Products.Find(id) == null)
+                {
+                    return NotFound();
+                }
+
+                throw;
+            }
+
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<Product>> DeleteProduct(int id)
+        {
+            var product = await _context.Products.FindAsync(id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            _context.Products.Remove(product);
+            await _context.SaveChangesAsync();
+
+            return product;
+        }
+        [HttpPost] // Deleting Several Itams.
+        [Route("Delete")]
+        public async Task<IActionResult> DeleteMultiple([FromQuery] int[] ids)
+        {
+            var products = new List<Product>();
+            foreach (var id in ids)
+            {
+                var product = await _context.Products.FindAsync(id);
+
+                if (product == null)
+                {
+                    return NotFound();
+                }
+
+                products.Add(product);
+            }
+
+            _context.Products.RemoveRange(products);
+            await _context.SaveChangesAsync();
+
+            return Ok(products);
+        }
+
+
     }
 
     }
