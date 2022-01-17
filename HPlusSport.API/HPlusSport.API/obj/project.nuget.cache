@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "77CAca/+V3irSgBWE0LhLgvKC299YhH5QBOVttunyNYyp7PTdku8nO1jt7GPCGDfC21F9PL/VTn63laMYtT+yA==",
+  "dgSpecHash": "O8P0A1Fg8D5GlRFB9HF//ouxrg2uSidWjw7P2A1mW1a3bVt1U1FP+C47kUJw+iWAQE/JweNwsS4OW6ibP2qbVg==",
   "success": true,
   "projectFilePath": "C:\\Users\\aynur\\Source\\Repos\\Sample-API\\HPlusSport.API\\HPlusSport.API\\HPlusSport.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\aynur\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\4.1.1\\microsoft.aspnetcore.mvc.versioning.4.1.1.nupkg.sha512",
+    "C:\\Users\\aynur\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning.apiexplorer\\4.1.1\\microsoft.aspnetcore.mvc.versioning.apiexplorer.4.1.1.nupkg.sha512",
     "C:\\Users\\aynur\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\aynur\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\aynur\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
