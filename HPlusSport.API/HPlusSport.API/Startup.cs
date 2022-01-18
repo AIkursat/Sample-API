@@ -57,6 +57,7 @@ namespace HPlusSport.API
                 builder.WithOrigins("https://localhost:44303")
                 .AllowAnyHeader()
                 .AllowAnyMethod()
+                .AllowAnyOrigin()
                 );
             });
 
