@@ -14,7 +14,7 @@ namespace HPlusSport.API.Models
         {
 
 
-            modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly); // That will allow all of the Classes which has IEntityTypeConfiguration.
+            modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly); // That will allow all of the Classes which has IEntityTypeConfiguration interface.
 
 
             /*
